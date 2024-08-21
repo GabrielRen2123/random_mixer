@@ -8,11 +8,17 @@ class Anuncios extends StatelessWidget {
     return Container
       (
         height: 50,
-        width: 320,
-        decoration: BoxDecoration
+        //width: 320,
+        color: Colors.grey[800],
+        padding: EdgeInsets.all(10.0),
+        child: Center
         (
-          color: const Color.fromARGB(66, 145, 36, 36)
-        )
+          child: Text
+          (
+            'Anuncio 1',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
       );
   }
 }
