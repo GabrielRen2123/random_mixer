@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:random_mixer_app/clases/Anuncios.dart';
 import 'package:random_mixer_app/clases/Botons.dart';
-import 'package:random_mixer_app/menus/menu_crear_grupos.dart';
-import 'package:random_mixer_app/menus/menu_mi_grupos.dart';
+import 'package:random_mixer_app/menus/Menu_principal.dart';
 
-class MenuPrincipal extends StatelessWidget {
+class MenuMiGrupos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +25,7 @@ class MenuPrincipal extends StatelessWidget {
                     // Acción del menú
                   },
                 ),
-                Text('RandomMixer',
-                    style: TextStyle(color: Colors.black, fontSize: 18.0)),
+                Text('RandomMixer', style: TextStyle(color: Colors.black, fontSize: 18.0)),
                 IconButton(
                   icon: Icon(Icons.settings, color: Colors.black),
                   onPressed: () {
@@ -47,7 +45,7 @@ class MenuPrincipal extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black26,
+                      color: Color.fromARGB(66, 236, 10, 10),
                       blurRadius: 10.0,
                     ),
                   ],
@@ -57,7 +55,7 @@ class MenuPrincipal extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 40.0,
-                      backgroundImage: AssetImage(''),
+                      backgroundImage: AssetImage('assets/logo.png'),
                     ),
                     SizedBox(height: 10.0),
                     Text(
@@ -69,37 +67,33 @@ class MenuPrincipal extends StatelessWidget {
                     ),
                     SizedBox(height: 20.0),
                     CustomButton(
-                        titel: "mi Grupos",
+                      titel: "asdfsadf",
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => MenuMiGrupos()));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                          builder: (context) => MenuPrincipal()));
                         },
                         icons: Icons.group),
                     SizedBox(height: 10.0),
-      CustomButton(
-                      titel: "mi Grupos",
+                    ElevatedButton.icon(
                       onPressed: () {
-                      Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => menu_crear_grupos()));
-                        }, icons: Icons.add)
+                        // Acción para Create group
+                      },
+                      icon: Icon(Icons.add),
+                      label: Text('shfjalskdhfjkasd'),
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(horizontal: 30.0),
+                        minimumSize: Size(double.infinity, 50),
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
           ),
           // Anuncio 2 en la parte inferior
-          Container(
-            color: Colors.grey[800],
-            padding: EdgeInsets.all(10.0),
-            child: Center(
-              child: Text(
-                'Anuncio 2',
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-          ),
+          Anuncios(),
         ],
       ),
       floatingActionButton: FloatingActionButton(

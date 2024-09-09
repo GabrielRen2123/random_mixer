@@ -1,27 +1,28 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  final String title;
+  final String titel;
   final VoidCallback onPressed;
-  final double width;
-  final double height;
+  final IconData icons;
 
   const CustomButton({
     Key? key,
-    required this.title,
+    required this.titel,
     required this.onPressed,
-    this.width = 200.0,
-    this.height = 50.0,
+    required this.icons,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: width,
-      height: height,
-      child: ElevatedButton(
-        onPressed: onPressed,
-        child: Text(title),
+    return ElevatedButton.icon(
+      onPressed: () {
+        onPressed();
+      },
+      icon: Icon(icons),
+      label: Text(titel),
+      style: ElevatedButton.styleFrom(
+        padding: EdgeInsets.symmetric(horizontal: 30.0),
+        minimumSize: Size(double.infinity, 50),
       ),
     );
   }
