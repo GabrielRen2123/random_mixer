@@ -74,3 +74,14 @@ class CustomButton extends StatelessWidget {
         );
   }
 }
+    /*ElevatedButton.icon(
+      onPressed: () {
+        onPressed();
+      },
+      icon: Icon(icons),
+      label: Text(titel),
+      style: ElevatedButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 30.0),
+        minimumSize: const Size(double.infinity, 50),
+      ),
+    );*/
