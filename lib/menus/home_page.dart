@@ -4,6 +4,8 @@ import 'package:random_mixer_app/clases/Botons.dart';
 import 'package:random_mixer_app/clases/Custom_Text.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +58,7 @@ class HomePage extends StatelessWidget {
                         width: 250,
                         height: 70,
                         onPressed: () {},
-                        boton_color: Color(0xFF3784EE),
+                        boton_color: const Color(0xFF3784EE),
                         text_color: Colors.black,
                         box_shadow_color: Colors.green,
                       ),
@@ -68,7 +70,7 @@ class HomePage extends StatelessWidget {
                         width: 250,
                         height: 70,
                         onPressed: () {},
-                        boton_color: Color(0xFF3784EE),
+                        boton_color: const Color(0xFF3784EE),
                         text_color: Colors.black,
                         box_shadow_color: Colors.green,
                       ),
@@ -76,7 +78,7 @@ class HomePage extends StatelessWidget {
                   ),
             ),
         ),
-        bottomNavigationBar:Row(
+        bottomNavigationBar:const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Anuncios(),
