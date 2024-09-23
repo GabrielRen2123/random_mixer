@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:random_mixer_app/clases/Anuncios.dart';
-import 'package:random_mixer_app/clases/Botons.dart';
+import 'package:random_mixer_app/clases/custom_boton.dart';
 import 'package:random_mixer_app/clases/Custom_Text.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -55,8 +57,8 @@ class HomePage extends StatelessWidget {
                         font_Size: 20,
                         width: 250,
                         height: 70,
-                        onPressed: () {},
-                        boton_color: Color(0xFF3784EE),
+                        onPressed: () {},//Aqui se coloca lo que quiere que haga el boton
+                        boton_color: const Color(0xFF3784EE),
                         text_color: Colors.black,
                         box_shadow_color: Colors.green,
                       ),
@@ -67,8 +69,8 @@ class HomePage extends StatelessWidget {
                         font_Size: 20,
                         width: 250,
                         height: 70,
-                        onPressed: () {},
-                        boton_color: Color(0xFF3784EE),
+                        onPressed: () {},//Aqui se coloca lo que quiere que haga el boton
+                        boton_color: const Color(0xFF3784EE),
                         text_color: Colors.black,
                         box_shadow_color: Colors.green,
                       ),
@@ -76,7 +78,7 @@ class HomePage extends StatelessWidget {
                   ),
             ),
         ),
-        bottomNavigationBar:Row(
+        bottomNavigationBar:const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Anuncios(),
