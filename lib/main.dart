@@ -10,6 +10,7 @@ class RandomMixerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       title: 'RandomMixer',
       home: HomePage(),
     );
