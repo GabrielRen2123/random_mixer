@@ -34,7 +34,7 @@ class CustomButton extends StatelessWidget {
               BoxShadow(
                 color: box_shadow_color,
                 blurRadius: 4,
-                offset: Offset(0, 4),
+                offset: const Offset(0, 4),
                 spreadRadius: 0,
               )
             ],
@@ -44,11 +44,11 @@ class CustomButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 //tamaño del logo
                 width: 70, 
                 height: 70,
-                child: const FlutterLogo(),
+                child: FlutterLogo(),
               ),
               SizedBox(
                 child: ElevatedButton(
