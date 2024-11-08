@@ -2,7 +2,7 @@ import 'dart:io'; // Importar para manejar archivos
 import 'package:flutter/material.dart';
 import 'package:random_mixer_app/clases/Anuncios.dart';
 import 'package:random_mixer_app/clases/custom_boton.dart';
-import 'package:random_mixer_app/clases/Custom_Text.dart';
+//import 'package:random_mixer_app/clases/custom_Text.dart';
 import 'package:file_picker/file_picker.dart';
 
 //Base de datos
