@@ -15,11 +15,9 @@ class NameList extends StatelessWidget {
         border: Border.all(color: Colors.blue),
         borderRadius: BorderRadius.circular(10),
       ),
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(
-          minHeight: 100, minWidth: 300,
-          maxHeight: 300, // Limitar el alto máximo para que tenga scroll
-        ),
+      child: SizedBox(
+        height: 200, // Limitar la altura máxima
+        width: 300, // Puedes ajustar el ancho si es necesario
         child: SingleChildScrollView(
           child: Wrap(
             spacing: 8.0,
