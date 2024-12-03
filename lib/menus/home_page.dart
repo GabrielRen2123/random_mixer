@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:random_mixer_app/clases/Anuncios.dart';
 import 'package:random_mixer_app/clases/custom_text.dart';
 import 'package:random_mixer_app/clases/custom_boton.dart';
-import 'package:random_mixer_app/menus/segunda_pag.dart';
+import 'package:random_mixer_app/menus/creacionGroup_pag.dart';
+import 'package:random_mixer_app/menus/creadosGroup_pagin.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -58,19 +59,19 @@ class HomePage extends StatelessWidget {
                         font_Size: 15,
                         width: 250,
                         height: 70,
-                        onPressed: () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SegundaPag()),);},//Aqui se coloca lo que quiere que haga el boton
+                        onPressed: () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const creacionGroup()),);},//Aqui se coloca lo que quiere que haga el boton
                         boton_color: const Color(0xFF3784EE),
                         text_color: Colors.black,
                         box_shadow_color: Colors.green,
                       ),
                       const SizedBox(height: 20),
                       CustomButton(
-                        customText: "Prueba",
+                        customText: "Segunda pag",
                         fontFamily: "Poppins",
                         font_Size: 20,
                         width: 250,
                         height: 70,
-                        onPressed: () {},//Aqui se coloca lo que quiere que haga el boton
+                        onPressed: () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => creadosGroup()),);},//Aqui se coloca lo que quiere que haga el boton
                         boton_color: const Color(0xFF3784EE),
                         text_color: Colors.black,
                         box_shadow_color: Colors.green,

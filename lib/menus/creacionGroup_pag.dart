@@ -5,14 +5,14 @@ import 'package:random_mixer_app/clases/Anuncios.dart';
 import 'package:random_mixer_app/clases/nameList.dart';
 import 'package:random_mixer_app/clases/text_form.dart';
 
-class SegundaPag extends StatefulWidget {
-  const SegundaPag({super.key});
+class creacionGroup extends StatefulWidget {
+  const creacionGroup({super.key});
 
   @override
-  _SegundaPagState createState() => _SegundaPagState();
+  _creacionGroupState createState() => _creacionGroupState();
 }
 
-class _SegundaPagState extends State<SegundaPag> {
+class _creacionGroupState extends State<creacionGroup> {
   List<String> names = [];
 
   // Función para agregar nombre a la lista
@@ -36,7 +36,7 @@ class _SegundaPagState extends State<SegundaPag> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextForm(addName: addName), // Paso la función para agregar nombres
-          
+
           const CategorySelector(),
 
           const SizedBox(height: 5),
@@ -45,7 +45,7 @@ class _SegundaPagState extends State<SegundaPag> {
             style: TextStyle(
                 fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue),
           ),
-          
+
           const SizedBox(height: 10),
           NameList(
               names: names,
@@ -60,10 +60,10 @@ class _SegundaPagState extends State<SegundaPag> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Center(
-            child: Anuncios(),
-          ),
+        title: const Center(
+          child: Anuncios(),
         ),
+      ),
       body: EstructuraBasica(widgetList: [ManagerList()]),
       bottomNavigationBar: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
