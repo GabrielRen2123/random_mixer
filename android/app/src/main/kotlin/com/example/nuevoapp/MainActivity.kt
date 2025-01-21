@@ -1,4 +1,4 @@
-package com.example.random_mixer_app
+package com.example.nuevoapp
 
 import io.flutter.embedding.android.FlutterActivity
 

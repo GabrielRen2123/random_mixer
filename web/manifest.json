@@ -1,6 +1,6 @@
 {
-    "name": "random_mixer_app",
-    "short_name": "random_mixer_app",
+    "name": "nuevoapp",
+    "short_name": "nuevoapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
